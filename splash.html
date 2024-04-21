@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash Screen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div class="splash-container bg-purple">
+        <img
+          class="w-[100px]"
+          src="./assets/images/splash-main.png"
+          alt="welcome HStory"
+        />
+        <span
+          class="absolute text-xs bottom-7 w-full text-center font-bold text-orange"
+          >홈스토리</span
+        >
+      </div>
+    </div>
+
+    <script>
+      // 페이지 로드가 완료되면 함수 실행
+      window.onload = function () {
+        // 2초 후에 complex-info.html 페이지로 이동
+        setTimeout(function () {
+          window.location.href = "complex-info.html";
+        }, 2000); // 2000 밀리초 == 2초
+      };
+    </script>
+  </body>
+</html>

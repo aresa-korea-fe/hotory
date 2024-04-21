@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash Screen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div
+        class="app-topbar flex items-center justify-between pt-7 pb-2.5 px-5"
+      >
+        <div id="goComplexInfo" class="flex items-center gap-3">
+          <img
+            class="w-5 h-5 cursor-pointer"
+            src="./assets/icons/arrow_back_24px.png"
+          />
+          <div>단지 살펴보기</div>
+        </div>
+      </div>
+
+      <div>
+        <section>
+          <div class="text-xl px-5 pt-2.5 pb-2 font-bold">송파 헬리오시티</div>
+          <div class="flex px-5 pb-1 gap-1 items-center">
+            <img src="./assets/icons/icons8-location-anima.png" />
+            <span class="text-sm opacity-50">서울특별시 송파구 가락동 913</span>
+          </div>
+        </section>
+
+        <!-- linear -->
+        <div class="h-[1px] opacity-10 my-3" style="background: gray"></div>
+
+        <!-- looking for -->
+        <section>
+          <div class="flex flex-col px-5">
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">세대 수</div>
+              <div>9,510세대</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">입주시기</div>
+              <div>2018.12.28</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">시공사</div>
+              <div>(주)현대산업개발, (주)현대건설</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">유형</div>
+              <div>아파트</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">동수</div>
+              <div>84개</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">관리비(월)</div>
+              <div>13~49만원</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">층수</div>
+              <div class="text-right leading-[1.2]">
+                가장 높은 동 (36층)<br />
+                가장 낮은 동 (10층)
+              </div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">주차</div>
+              <div class="text-right leading-[1.2]">
+                세대당 1.3대 (총 12,456대)<br />
+                <span class="text-sm">지하 주차장 있음</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">난방</div>
+              <div>지역난방(열병합)</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">용적률/건폐율</div>
+              <div>285%/19%</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">규제정보</div>
+              <div>투기지역</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">관리사무소</div>
+              <div class="text-purple underline">02-403-8322</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector("#goComplexInfo").addEventListener("click", () => {
+        location.href = "complex-info.html";
+      });
+    </script>
+  </body>
+</html>

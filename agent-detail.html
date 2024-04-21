@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헬리오시티 502호 | 매물 정보보기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div
+        id="backdrop"
+        class="absolute bg-black h-full w-full opacity-80 hidden left-0"
+      ></div>
+      <div
+        class="fixed bottom-0 left-0 w-full bg-white z-[2] cursor-pointer"
+        style="box-shadow: 0px 8px 10px 8px rgba(48, 47, 65, 0.2)"
+      >
+        <div
+          id="onExpert"
+          class="flex items-center gap-2 pt-4 pb-5 px-5 block max-w-[640px] m-auto"
+        >
+          <img class="w-10 h-10" src="./assets/images/expert.png" />
+          <div>
+            <div class="flex items-center">
+              <div class="text-sm font-bold">아리아</div>
+              <span
+                class="text-xs ml-2 px-2 py-[1px] bg-orange text-white rounded-full"
+                >1번 중개사</span
+              >
+            </div>
+            <div class="text-xs">서울특별시 송파구 가락동 201-22</div>
+          </div>
+        </div>
+
+        <div id="offExpert" class="hidden max-w-[640px] m-auto">
+          <div class="pt-4 pb-5 px-5">
+            <!-- bg-[#F9F7FD] -->
+            <div class="flex gap-2 text-xs mb-4">
+              <span>#친절한</span>
+              <span>#자유로운</span>
+              <span>#끈질긴</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img class="w-10 h-10" src="./assets/images/expert.png" />
+              <div>
+                <div class="flex items-center">
+                  <div class="text-sm font-bold">아리아</div>
+                </div>
+                <div class="text-xs underline text-purple">010 2399 2233</div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <span
+                class="text-xs px-2 py-[1px] bg-orange text-white rounded-full"
+                >1번 중개사</span
+              >
+              <span
+                class="text-xs ml-1 px-2 py-[1px] bg-purple text-white rounded-full"
+                >계약 10회 성공</span
+              >
+            </div>
+          </div>
+
+          <!-- linear -->
+          <div class="h-[1px] opacity-10" style="background: gray"></div>
+
+          <div class="py-4 px-5 text-sm">
+            <div class="font-bold">
+              선호 공인중개사
+              <span class="ml-1 text-xs opacity-50">232-881-787732</span>
+            </div>
+            <div class="flex items-center justify-between text-xs mt-1">
+              <div>서울특별시 송파구 가락동 201-22</div>
+              <div class="text-purple underline">051 727 3933</div>
+            </div>
+          </div>
+
+          <!-- linear -->
+          <div class="h-[1px] opacity-10" style="background: gray"></div>
+
+          <div class="text-sm pt-1 pb-5">
+            <div class="flex items-center justify-between pl-5 pr-3 py-2">
+              <div class="text-orange">지금은 <b>'송파 헬리오시티'</b></div>
+              <div class="flex items-center text-xs">
+                <img src="./assets/icons/arrow_drop_up_orange_24px.png" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 px-5">
+              <div class="flex items-center justify-between py-1">
+                <div>송파 헬리오시티 2024년 이벤트</div>
+                <div class="opacity-50">2024.03.20</div>
+              </div>
+              <div class="flex items-center justify-between py-1">
+                <div>요즘 송파 분위기 어떤지 궁금하셨죠?</div>
+                <div class="opacity-50">2024.02.12</div>
+              </div>
+              <div class="flex items-center justify-between py-1">
+                <div>최근 헬리오시티 이슈 아시나요?</div>
+                <div class="opacity-50">2024.01.20</div>
+              </div>
+              <div class="flex items-center justify-between py-1">
+                <div>아파트는 주민의 것</div>
+                <div class="opacity-50">2023.12.20</div>
+              </div>
+              <div class="flex items-center justify-between py-1">
+                <div>매매와 전세 비율이 변화하고 있어요.</div>
+                <div class="opacity-50">2023.11.03</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- linear -->
+          <div class="h-[1px] opacity-10" style="background: gray"></div>
+
+          <div class="text-sm pt-1">
+            <div class="flex items-center justify-between pl-5 pr-3 py-2">
+              <div class="opacity-50">문정동 올림픽훼밀리타운</div>
+              <div class="flex items-center text-xs">
+                <img src="./assets/icons/arrow_drop_down_24px.png" />
+              </div>
+            </div>
+          </div>
+          <div class="text-sm pt-1">
+            <div class="flex items-center justify-between pl-5 pr-3 py-2">
+              <div class="opacity-50">청담역 푸르지오시티</div>
+              <div class="flex items-center text-xs">
+                <img src="./assets/icons/arrow_drop_down_24px.png" />
+              </div>
+            </div>
+          </div>
+          <div class="text-sm pt-1 pb-5">
+            <div class="flex items-center justify-between pl-5 pr-3 py-2">
+              <div class="opacity-50">청담 더펜트하우스</div>
+              <div class="flex items-center text-xs">
+                <img src="./assets/icons/arrow_drop_down_24px.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="app-topbar flex items-center justify-between pt-7 pb-2.5 px-5"
+      >
+        <div id="goComplexInfo" class="flex items-center gap-3">
+          <img
+            class="w-5 h-5 cursor-pointer"
+            src="./assets/icons/arrow_back_24px.png"
+          />
+          <div>헬리오시티 502호</div>
+        </div>
+        <div class="flex gap-3">
+          <img class="w-5 h-5" src="./assets/icons/share_24px.png" />
+          <img class="w-5 h-5" src="./assets/icons/bookmark_24px.png" />
+        </div>
+      </div>
+
+      <div class="pb-[75px]">
+        <section>
+          <div class="px-5">
+            <span
+              class="text-xs px-2 py-[1px] text-orange rounded-full font-bold"
+              style="background: rgba(239, 70, 29, 0.1)"
+              >최저가</span
+            >
+            <span
+              class="text-xs px-2 py-[1px] bg-orange text-white rounded-full"
+              >임장 완료</span
+            >
+          </div>
+          <div class="text-xl px-5 pt-2.5 pb-2 font-bold">매매 15억 9,000</div>
+          <div class="flex px-5 pb-1 gap-1 items-center">
+            <span class="text-sm opacity-50"
+              >102동 | 502호 | 공급 144.1㎡ | 방4 | 욕실 2</span
+            >
+          </div>
+          <div class="px-5 py-3">
+            <img src="./assets/images/coldown.png" />
+          </div>
+        </section>
+
+        <img class="w-full py-2" src="./assets/images/agency.png" />
+
+        <section class="px-5 py-3">
+          <div class="pl-1 text-sm">매물 기본 정보</div>
+          <div
+            class="p-5 mt-4 rounded-[8px] flex flex-col gap-6 text-sm"
+            style="background: rgba(128, 128, 128, 0.05)"
+          >
+            <div class="flex gap-3 items-center">
+              <img class="w-6" src="./assets/icons/icons8-layers-100.png" />
+              <div>공급 144.1㎡ / 전용 120.9㎡</div>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img
+                class="w-6"
+                src="./assets/icons/icons8-studio-floor-plan-100.png"
+              />
+              <div>방 4개 / 욕실 2개</div>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img class="w-6" src="./assets/icons/icons8-kaaba-100.png" />
+              <div>5층 / 14층</div>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img class="w-6" src="./assets/icons/icons8-compass-100.png" />
+              <div>남서 (거실 기준)</div>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img class="w-6" src="./assets/icons/icons8-planner-100.png" />
+              <div>즉시 입주 가능</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- linear -->
+        <div class="h-[1px] opacity-10 my-2" style="background: gray"></div>
+
+        <section class="px-5 py-3">
+          <div class="pl-1 text-sm mb-4">매물 기본 정보</div>
+
+          <div class="flex items-center">
+            <div class="p-0.5" style="background: rgba(128, 128, 128, 0.05)">
+              <div class="text-xs px-1 py-0.5 bg-white">매매</div>
+            </div>
+            <div class="p-0.5" style="background: rgba(128, 128, 128, 0.05)">
+              <div class="text-xs px-1 py-0.5">전세</div>
+            </div>
+            <div class="p-0.5" style="background: rgba(128, 128, 128, 0.05)">
+              <div class="text-xs px-1 py-0.5">월세</div>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-between py-5">
+            <div class="pl-1">최근 3년</div>
+            <div class="flex flex-col gap-4">
+              <div class="text-right">
+                <span
+                  class="text-xs px-2 py-[1px] text-orange rounded-full font-bold"
+                  style="background: rgba(239, 70, 29, 0.1)"
+                  >최저가</span
+                >
+                <b>17억 2,000</b>
+                <span class="opacity-50">(22년 1월)</span>
+              </div>
+              <div class="text-right">
+                <span
+                  class="text-xs px-2 py-[1px] text-purple rounded-full font-bold"
+                  style="background: rgba(57, 8, 198, 0.1)"
+                  >최고가</span
+                >
+                <b>20억 2,000</b>
+                <span class="opacity-50">(24년 2월)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- linear -->
+          <div class="h-[1px] opacity-10" style="background: gray"></div>
+
+          <div class="flex flex-row justify-between py-5">
+            <div class="pl-1">2024</div>
+            <div class="flex flex-col gap-4">
+              <div class="text-right">
+                <b>19억 8,000</b>
+                <span class="opacity-50">(24년 3월)</span>
+              </div>
+              <div class="text-right">
+                <span
+                  class="text-xs px-2 py-[1px] rounded-full font-bold"
+                  style="background: rgba(48, 47, 65, 0.1)"
+                  >직거래</span
+                >
+                <b>19억 2,000</b>
+                <span class="opacity-50">(24년 2월)</span>
+              </div>
+              <div class="text-right">
+                <span
+                  class="text-xs px-2 py-[1px] text-purple rounded-full font-bold"
+                  style="background: rgba(57, 8, 198, 0.1)"
+                  >최고가</span
+                >
+                <b>20억 2,000</b>
+                <span class="opacity-50">(24년 2월)</span>
+              </div>
+              <div class="text-right">
+                <b>19억 2,800</b>
+                <span class="opacity-50">(24년 3월)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- linear -->
+          <div class="h-[1px] opacity-10" style="background: gray"></div>
+
+          <div class="flex flex-row justify-between py-5">
+            <div class="pl-1">2023</div>
+            <div class="flex flex-col gap-4">
+              <div class="text-right">
+                <b>19억 1,000</b>
+                <span class="opacity-50">(23년 11월)</span>
+              </div>
+              <div class="text-right">
+                <b>18억 2,200</b>
+                <span class="opacity-50">(23년 11월)</span>
+              </div>
+              <div class="text-right">
+                <b>17억 2,100</b>
+                <span class="opacity-50">(23년 10월)</span>
+              </div>
+              <div class="text-right">
+                <b>19억</b>
+                <span class="opacity-50">(23년 6월)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- linear -->
+        <div class="h-[1px] opacity-10 mb-3" style="background: gray"></div>
+
+        <section class="mb-4">
+          <div class="flex items-center justify-between pl-5 pr-2 py-2">
+            <div class="text-orange text-sm">매물 진단하기</div>
+          </div>
+          <div class="flex flex-col gap-1 px-5">
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">전세안전진단</div>
+              <div>요청하기</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">등기부등본</div>
+              <div>발급하기</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">건축물대장</div>
+              <div>발급하기</div>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <div class="opacity-60">집평사 보고서</div>
+              <div>발급하기</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector("#onExpert").addEventListener("click", () => {
+        document
+          .querySelector("#offExpert")
+          .classList.replace("hidden", "block");
+        document
+          .querySelector("#backdrop")
+          .classList.replace("hidden", "block");
+        document
+          .querySelector("#onExpert")
+          .classList.replace("block", "hidden");
+
+        document
+          .querySelector(".mobile-container")
+          .classList.add("overflow-hidden");
+      });
+
+      document.querySelector("#offExpert").addEventListener("click", () => {
+        document
+          .querySelector("#onExpert")
+          .classList.replace("hidden", "block");
+        document
+          .querySelector("#backdrop")
+          .classList.replace("block", "hidden");
+        document
+          .querySelector("#offExpert")
+          .classList.replace("block", "hidden");
+        document
+          .querySelector(".mobile-container")
+          .classList.remove("overflow-hidden");
+      });
+
+      document.querySelector("#goComplexInfo").addEventListener("click", () => {
+        location.href = "complex-info.html";
+      });
+    </script>
+  </body>
+</html>
